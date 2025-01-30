@@ -12,13 +12,13 @@ exports.config = {
     output: './output',
     helpers: {
         Appium: {
-            platform: 'Android',
-            app: 'C:\\Users\emers\OneDrive\Documentos\app_qafood.apk',
+            platform: process.env.PLATFORM,
+            app: process.env.APP,
             desiredCapabilities: {
-                appPackage: 'com.qazandoqafood',
-                appActivity: 'MainActivity',
-                deviceName: 'emulator-5554',
-                platformVersion: '9'
+                appPackage: process.env.PACKAGE == 'Android' ? process.env.PACKAGE : '',
+                appActivity: process.env.PACKAGE == 'Android' ? process.env.ACTIVITY : '',
+                deviceName: process.env.DEVICE,
+                platformVersion: process.env.VERSION
             }
         }
     },

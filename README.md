@@ -40,3 +40,4 @@
 
 * Primeiramente deve-se iniciar o **Appium** como o comando appium no seu terminal
 * Rodar o comando no seu terminal: **npx codeceptjs run --steps**
+* Rodar o comando no seu terminal: **PLATFORM=Android APP='CAMINHO_APP' DEVICE=android_device VERSION=9 PACKAGE=NOME_PACKAGE ACTIVITY=MainActivity npx codeceptjs run --steps**
