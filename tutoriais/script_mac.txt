@@ -1,0 +1,28 @@
+# Configurações Windows
+
+# Instalação do JDK (https://l1nq.com/QJ7qT)
+# Instalação do Android Studio (https://l1nq.com/lDNxn)
+# X Code - Loja
+
+# Depois de instalar o Android Studio e Java prosseguir para os demais passos
+
+1 - open ~/.bash_profile
+2 - Colocar as seguintes instruções no bash:
+
+    export ANDROID_HOME=/Users/$(whoami)/Library/Android/sdk
+    export PATH=$PATH:$ANDROID_HOME/tools
+    export PATH=$PATH:$ANDROID_HOME/tools/bin
+    export PATH=$PATH/:$ANDROID_HOME/platform-tools
+    export JAVA_HOME=$(/usr/libexec/java_home)
+    export PATH=${JAVA_HOME}/bin:$PATH
+
+3 - source ~/.bash_profile
+
+# (Emulador externo) - Seguir as configurações do tutorial: https://l1nq.com/gZLbE
+# Criando o bash Profile - https://acesse.dev/lbgyZ
+
+# Configuração do Android Studio (Final)
+
+# (Emulador externo) - Seguir as configurações do tutorial: https://developer.android.com/studio/run/emulator-launch-separate-window?hl=pt-br
+# (Configuração pasta tools) - Conferir as evidências para configuração
+* (Opção de Desenvolvedor) - Configure o smartphone para opção de desenvolvedor (About Emulated Device- - Build Number), cliques
