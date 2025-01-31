@@ -20,6 +20,7 @@
 * **npm i codeceptjs webdriverio@8.6.3 --save-dev** - Ira realizar a instalação do CodeceptJS
 * **appium driver install uiautomator2** e **appium driver install xcuitest** - Instalação dos Drivers
 * **appium plugin install execute-driver** - Pacote de execução (Talvez opcional)
+* **npm install --save-dev webdriver-manager** - Instala o WebDriver
 
 ## Configuração Variáveis de Ambiente
 
@@ -34,10 +35,13 @@
 
 * No seu terminal digite o seguinte comando: **npx codeceptjs init**
 * Realize a pré configuração padrão, sempre selecionando as opções desejadas
-* Configurar o diretório do APK no arquivo **codecept.conf.js**
+* Configurar o diretório do APK no arquivo **.env**
 
 ## Rodando os Testes
 
-* Primeiramente deve-se iniciar o **Appium** como o comando appium no seu terminal
+* Primeiramente deve-se iniciar o **Appium** como o comando **appium** no seu terminal
 * Rodar o comando no seu terminal: **npx codeceptjs run --steps**
-* Rodar o comando no seu terminal: **PLATFORM=Android APP='CAMINHO_APP' DEVICE=android_device VERSION=9 PACKAGE=NOME_PACKAGE ACTIVITY=MainActivity npx codeceptjs run --steps**
+
+## Comandos de Referências
+
+* **curl http://localhost:4723/status** - Para verificar o status do Appium

@@ -1,6 +1,5 @@
 PLATFORM=Android
-APP='CAMINHO_APP'
-DEVICE=android_device
-VERSION=9
-PACKAGE='NOME_PACKAGE'
-ACTIVITY=MainActivity
+APP='C:\app_qafood.apk'
+DEVICE='emulator-5554'
+VERSION=15
+PACKAGE=com.qazandoqafood
