@@ -15,6 +15,9 @@ module.exports = {
     },
 
     doLogin(email, password) {
+        //pause(); // Comando para debugar manualmente os testes, cada teste o mesmo salva na pasta outputs o histótico
+        //Toda vez que o teste falha o mesmo tira uma screenshot e salva na pasta output
+
         I.waitForElement(this.fields.email, 5);
         I.fillField(this.fields.email, email);
     
