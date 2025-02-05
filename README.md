@@ -1,13 +1,13 @@
 # teste CodeceptJS e Appium
 
-* Testes na interface WEB + Mobile
+* Testes na interface Mobile
+* Usando Page Object
 
 ## Programas Necessários para todos os Ambientes
 
 * NodeJS
 * Java
 * Appium Doctor
-* Appium Desktop
 * Appium
 * Visual Studio Code
 
@@ -39,9 +39,16 @@
 
 ## Rodando os Testes
 
-* Primeiramente deve-se iniciar o **Appium** como o comando **appium** no seu terminal
+* Primeiramente deve-se iniciar o **Appium** como o comando **appium** no seu terminal ou **appium --allow-cors**
 * Rodar o comando no seu terminal: **npx codeceptjs run --steps**
+* Criando arquivos de teste: **npx codeceptjs gt**
+* Criando Page Object: **npx codeceptjs gpo**
 
 ## Comandos de Referências
 
 * **curl http://localhost:4723/status** - Para verificar o status do Appium
+
+## Rodando as configurações Appium Inspetor
+
+* Coloque uma porta: 4723
+* Abrir o link: **https://inspector.appiumpro.com/** para acessar o inspetor de elementos
