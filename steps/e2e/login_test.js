@@ -13,6 +13,14 @@ After(() => {
 });
 
 Scenario('Login com sucesso',  ({ I }) => {
+    I.runOnAndroid(() => {
+        console.log("Rodou no Android!");
+    });
+
+    I.runOnIOS(() => {
+        console.log("Rodou no IOS!");
+    });
+
     loginPage.doLogin('teste@teste.com', '123456');
 });
 

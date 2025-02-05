@@ -2,6 +2,7 @@
 
 * Testes na interface Mobile
 * Usando Page Object
+* Reports
 
 ## Programas Necessários para todos os Ambientes
 
@@ -43,7 +44,7 @@
 ## Rodando os Testes
 
 * Primeiramente deve-se iniciar o **Appium** como o comando **appium** no seu terminal ou **appium --allow-cors**
-* Rodar o comando no seu terminal: **npx codeceptjs run --steps**
+* Rodar o comando no seu terminal: **npm run testAll**
 * Criando arquivos de teste: **npx codeceptjs gt**
 * Criando Page Object: **npx codeceptjs gpo**
 
