@@ -21,7 +21,6 @@ exports.config = {
     helpers: {
         Appium: {
             'appiumV2': true,
-            'app': process.env.APP,
             'platform': 'android',
             'device': 'emulator',
             'host': '127.0.0.1',
