@@ -68,7 +68,7 @@
 
 * Abrir o link: **https://inspector.appiumpro.com/** para acessar o inspetor de elementos, segue abaixo o **JSON** de pré configuração:
 
-* ![Json de exemplo](tutoriais/images/json-config.png)
+* ![Json de exemplo](tutoriais/images/json-completo.png)
 
 ## Documentos de Estudos
 
