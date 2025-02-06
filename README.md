@@ -66,9 +66,9 @@
 * **Observações** - Se o mesmo não funcionar podemos usar o Maestro somente para usar como inspetor de elementos
 * **Observações** - Pode ocorrer de ocorrer erro ao realizar a conexão, certifique-se de configurar corretamente as **capabilities**
 
-* Abrir o link: **https://inspector.appiumpro.com/** para acessar o inspetor de elementos
+* Abrir o link: **https://inspector.appiumpro.com/** para acessar o inspetor de elementos, segue abaixo o **JSON** de pré configuração:
 
-* **JSON** - ![Json de exemplo](tutoriais/images/json-config.png)
+* ![Json de exemplo](tutoriais/images/json-config.png)
 
 ## Documentos de Estudos
 
