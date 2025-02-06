@@ -24,19 +24,7 @@ Scenario('Login com sucesso',  ({ I }) => {
     loginPage.doLogin('teste@teste.com', '123456');
 
     // Comando para simular um scroll da página
-    /*I.touchPerform([
-        {
-            action: 'longPress',
-            options: { x: '50%', y: '%54' }
-        },
-        {
-            action: 'moveTo',
-            options: { x: '50%', y: '18%' }
-        },
-        {
-            action: 'release'
-        }
-    ]);*/
+    //loginPage.scrollPage();
 
 }).tag('@login_sucesso');
 

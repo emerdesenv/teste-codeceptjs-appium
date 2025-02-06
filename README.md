@@ -68,6 +68,18 @@
 
 * Abrir o link: **https://inspector.appiumpro.com/** para acessar o inspetor de elementos
 
+* **JSON** - {
+  "appium:app": "C:\\app_qafood.apk",
+  "appium:platform": "android",
+  "appium:appPackage": "com.qazandoqafood",
+  "appium:deviceName": "emulator-5554",
+  "appium:platformVersion": "15",
+  "platformName": "Android",
+  "appium:device": "emulator",
+  "appium:automationName": "UIAutomator2",
+  "appium:appiumV2": true
+}
+
 ## Documentos de Estudos
 
 * Aplicando o BDD nos cenários de testes em: **https://codecept.io/bdd/**

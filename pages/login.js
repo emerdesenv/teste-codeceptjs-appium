@@ -31,5 +31,14 @@ module.exports = {
     checkLoginError() {
         I.waitForText(this.messages.login_error, 5);
         I.see(this.messages.login_error);
+    },
+
+    scrollPage() {
+        I.touchPerform([
+            { action: 'press', options: { x: 215, y: 1000 } },
+            { action: 'wait', options: { ms: 300 } },
+            { action: 'moveTo', options: { x: 215, y: 500 } },
+            { action: 'release' }
+        ]);
     }
 }
