@@ -1,8 +1,9 @@
 # teste CodeceptJS e Appium
 
-* Testes na interface Mobile
+* Testes Mobile
 * Usando Page Object
 * Reports
+* Uso de Tags
 
 ## Programas Necessários para todos os Ambientes
 
@@ -23,7 +24,7 @@
 
 ## Comandos para serem executados no Terminal Global (APPIUM)
 
-* **appium driver install uiautomator2** e **appium driver install xcuitest** - Instalação dos Drivers
+* **appium driver install uiautomator2** e **appium driver install xcuitest** - Instalação dos Drivers, **xcuitest** somente para MAC
 * **appium plugin install execute-driver** - Pacote de execução (Talvez opcional)
 
 ## Configuração Variáveis de Ambiente
@@ -41,12 +42,20 @@
 * Realize a pré configuração padrão, sempre selecionando as opções desejadas
 * Configurar o diretório do APK no arquivo **.env**
 
-## Rodando os Testes
+## Rodando os Testes (Emulator)
+
+* **Observações** - Rodando somente um teste dentro de uma suite ou uma suite, usar as tags, exemplo: **npm run testUnit '@name_test'**
 
 * Primeiramente deve-se iniciar o **Appium** como o comando **appium** no seu terminal ou **appium --allow-cors**
 * Rodar o comando no seu terminal: **npm run testAll**
 * Criando arquivos de teste: **npx codeceptjs gt**
 * Criando Page Object: **npx codeceptjs gpo**
+
+## Rodando os Testes (Real)
+
+* Para rodar no dispositivo real rode o comando no terminal: **adb devices**
+* Verifique se o seu dispositivo apareceu, pois é o nome que deve-ser configurado em **DEVICE** no arquivo **.env**
+* Rode o comando no terminal: **npm run testAll**
 
 ## Comandos de Referências
 
@@ -55,8 +64,8 @@
 ## Rodando as configurações Appium Inspetor
 
 * **Observações** - Se o mesmo não funcionar podemos usar o Maestro somente para usar como inspetor de elementos
+* **Observações** - Pode ocorrer de ocorrer erro ao realizar a conexão, certifique-se de configurar corretamente as **capabilities**
 
-* Coloque uma porta: 4728
 * Abrir o link: **https://inspector.appiumpro.com/** para acessar o inspetor de elementos
 
 ## Documentos de Estudos

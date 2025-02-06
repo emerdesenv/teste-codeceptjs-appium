@@ -1,8 +1,8 @@
 module.exports = {
-    bootstrap: function() {
+    start: function() {
         console.log("bootstrap executando server.js");
     },
-    teardown: function() {
+    stop: function() {
         console.log("teardown executando server.js");
     }
 }

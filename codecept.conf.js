@@ -5,6 +5,8 @@ setCommonPlugins
 
 require('dotenv').config();
 
+const server = require('./server/server.js');
+
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
 setHeadlessWhen(process.env.HEADLESS);
@@ -27,11 +29,14 @@ exports.config = {
             'port': 4723,
             'path': "/",
             desiredCapabilities: {
-                'appPackage': process.env.PACKAGE == 'Android' ? process.env.PACKAGE : '',
+                'appPackage': process.env.PLATFORM == 'Android' ? process.env.PACKAGE : '',
                 'deviceName': process.env.DEVICE,
                 'platformName': process.env.PLATFORM,
                 'platformVersion': process.env.VERSION,
-                'automationName': 'UIAutomator2'
+                'udid': process.env.PLATFORM == 'Android' ? '' : process.env.UDID,
+                'automationName': process.env.PLATFORM == 'Android' ? 'UiAutomator2' : 'XCUITest',
+                //'fullReset': false,
+                //'noReset': true
             }
         }
     },
@@ -47,10 +52,12 @@ exports.config = {
     bootstrap: async () => {
         console.log('🔧 Executando bootstrap antes dos testes...');
         // Exemplo: Conectar ao banco de dados ou iniciar servidor
+        await server.start();
     },
     teardown: async () => {
         console.log('🧹 Executando teardown após os testes...');
         // Exemplo: Limpar dados, desconectar do banco, encerrar processos
+        await server.stop();
     },
     name: 'teste-codeceptjs-appium'
 }

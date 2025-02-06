@@ -1,4 +1,4 @@
-Feature('login');
+Feature('login').tag('@login');
 
 const {I, loginPage } = inject(); // Declarando no escopo global, assim consigo usar em qualquer cenário de teste
 
@@ -22,9 +22,25 @@ Scenario('Login com sucesso',  ({ I }) => {
     });
 
     loginPage.doLogin('teste@teste.com', '123456');
-});
+
+    // Comando para simular um scroll da página
+    /*I.touchPerform([
+        {
+            action: 'longPress',
+            options: { x: '50%', y: '%54' }
+        },
+        {
+            action: 'moveTo',
+            options: { x: '50%', y: '18%' }
+        },
+        {
+            action: 'release'
+        }
+    ]);*/
+
+}).tag('@login_sucesso');
 
 Scenario('Login com erro',  ({ I }) => {
     loginPage.doLogin('teste@teste.com', '12345678');
     loginPage.checkLoginError();
-});
+}).tag('@login_erro');

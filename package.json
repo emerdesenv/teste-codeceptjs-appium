@@ -4,7 +4,8 @@
     "description": "* Testes na interface WEB + Mobile",
     "main": "index.js",
     "scripts": {
-        "testAll": "codeceptjs run --steps --reporter mochawesome"
+        "testAll": "codeceptjs run --steps --reporter mochawesome",
+        "testUnit": "codeceptjs run --steps --reporter mochawesome --grep"
     },
     "keywords": [],
     "author": "Emerson Amancio",
