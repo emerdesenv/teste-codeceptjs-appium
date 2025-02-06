@@ -4,6 +4,7 @@
 * Usando Page Object
 * Reports
 * Uso de Tags
+* Uso do Inspector
 
 ## Programas Necessários para todos os Ambientes
 
@@ -34,7 +35,6 @@
 ## Documentações de Referências
 
 * **CodeceptJS** - https://codecept.io/
-* **Appium Desktop** - https://github.com/appium/appium-desktop/releases
 
 ## Configurando o Projeto
 
