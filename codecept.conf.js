@@ -41,7 +41,8 @@ exports.config = {
     },
     include: {
         I: './steps_file.js',
-        loginPage: "./pages/login.js"
+        loginPage: "./pages/login.js",
+        searchPage: "./pages/search.js"
     },
     plugins: {
         screenShotOnFail: {
