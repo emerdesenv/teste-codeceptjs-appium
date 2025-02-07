@@ -1,5 +1,5 @@
 PLATFORM=Android
 DEVICE='emulator-5554'
 VERSION=15
-PACKAGE=com.qazandoqafood
+PACKAGE=com.android.chrome
 UDID=false
