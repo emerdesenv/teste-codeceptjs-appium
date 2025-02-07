@@ -21,11 +21,11 @@ Scenario('Pesquisa com sucesso',  ({ I }) => {
         console.log("Rodou no IOS!");
     });
 
-    searchPage.doSearch('Search or type URL', 'Maestro Framework');
+    searchPage.doSearch('Maestro Framework');
 
 }).tag('@pesquisa_sucesso');
 
-Scenario('Pesquisa com erro',  ({ I }) => {
-    searchPage.doSearch('Pesquisa aqui', 'Mestre dos magos');
-    searchPage.checkTextError();
+Scenario('Encontra o texto',  ({ I }) => {
+    searchPage.doSearch('Maestro Framework');
+    searchPage.checkText();
 }).tag('@pesquisa_erro');
