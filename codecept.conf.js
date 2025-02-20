@@ -33,9 +33,7 @@ exports.config = {
                 'platformName': process.env.PLATFORM,
                 'platformVersion': process.env.VERSION,
                 'udid': process.env.PLATFORM == 'Android' ? '' : process.env.UDID,
-                'automationName': process.env.PLATFORM == 'Android' ? 'UiAutomator2' : 'XCUITest',
-                //'fullReset': false,
-                //'noReset': true
+                'automationName': process.env.PLATFORM == 'Android' ? 'UiAutomator2' : 'XCUITest'
             }
         }
     },

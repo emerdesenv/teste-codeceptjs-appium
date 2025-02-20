@@ -18,15 +18,21 @@
 
 * **Observações** - Instruções -g ira instalar no seu ambiente, podendo ser rodado em qualquer terminal ou projeto
 
+npm install -g appium-doctor
+appium-doctor
+
+npm i -g appium
+
 * **npm i -g appium-doctor** - Irá instalar o appium-doctor, serve para verificar se o seu ambiente temos todas as configurações necessárias
 * **npm i -g appium** - Irá instalar o Appium
 * **npm i codeceptjs webdriverio@8.6.3 --save-dev** - Ira realizar a instalação do CodeceptJS
-* **npm i webdriver-manager --save-dev** - Instala o WebDriver
 
 ## Comandos para serem executados no Terminal Global (APPIUM)
 
+appium driver install uiautomator2
+appium driver install xcuitest
+
 * **appium driver install uiautomator2** e **appium driver install xcuitest** - Instalação dos Drivers, **xcuitest** somente para MAC
-* **appium plugin install execute-driver** - Pacote de execução (Talvez opcional)
 
 ## Configuração Variáveis de Ambiente
 
@@ -48,6 +54,9 @@
 
 * Primeiramente deve-se iniciar o **Appium** como o comando **appium** no seu terminal ou **appium --allow-cors**
 * Rodar o comando no seu terminal: **npm run testAll**
+
+## Comandos de Criação
+
 * Criando arquivos de teste: **npx codeceptjs gt**
 * Criando Page Object: **npx codeceptjs gpo**
 
@@ -63,7 +72,6 @@
 
 ## Rodando as configurações Appium Inspetor
 
-* **Observações** - Se o mesmo não funcionar podemos usar o Maestro somente para usar como inspetor de elementos
 * **Observações** - Pode ocorrer de ocorrer erro ao realizar a conexão, certifique-se de configurar corretamente as **capabilities**
 
 * Abrir o link: **https://inspector.appiumpro.com/** para acessar o inspetor de elementos, segue abaixo o **JSON** de pré configuração:

@@ -17,4 +17,3 @@
 
 * (Emulador externo) - Seguir as configurações do tutorial: https://developer.android.com/studio/run/emulator-launch-separate-window?hl=pt-br
 # (Configuração pasta tools) - Conferir as evidências para configuração
-* (Opção de Desenvolvedor) - Configure o smartphone para opção de desenvolvedor (About Emulated Device- - Build Number), cliques
