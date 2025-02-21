@@ -18,19 +18,11 @@
 
 * **Observações** - Instruções -g ira instalar no seu ambiente, podendo ser rodado em qualquer terminal ou projeto
 
-npm install -g appium-doctor
-appium-doctor
-
-npm i -g appium
-
 * **npm i -g appium-doctor** - Irá instalar o appium-doctor, serve para verificar se o seu ambiente temos todas as configurações necessárias
 * **npm i -g appium** - Irá instalar o Appium
 * **npm i codeceptjs webdriverio@8.6.3 --save-dev** - Ira realizar a instalação do CodeceptJS
 
 ## Comandos para serem executados no Terminal Global (APPIUM)
-
-appium driver install uiautomator2
-appium driver install xcuitest
 
 * **appium driver install uiautomator2** e **appium driver install xcuitest** - Instalação dos Drivers, **xcuitest** somente para MAC
 

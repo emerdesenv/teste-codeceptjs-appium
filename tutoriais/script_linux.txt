@@ -5,7 +5,7 @@ sudo apt upgrade
 
 # Configurações de instação do JDK
 
-sudo apt install openjdk-11-jdk
+sudo apt install openjdk-23-jdk
 
 # Instalando unzip
 
@@ -41,7 +41,6 @@ mv cmdline-tools/* tools/
 
 echo 'export ANDROID_HOME=$HOME/Android' >> ~/.bashrc
 echo 'export PATH=$PATH:$ANDROID_HOME/platform-tools/bin/:$PATH' >> ~/.bashrc
-echo 'export PATH=$PATH:$ANDROID_HOME/tools/bin/:$PATH' >> ~/.bashrc
 echo 'export ANDROID_SDK_ROOT=$HOME/Android' >> ~/.bashrc
 
 # Salvando as configurações
@@ -55,4 +54,3 @@ sdkmanager --install "platform-tools"
 # Configuração do Android Studio (Final)
 
 # (Emulador externo) - Seguir as configurações do tutorial: https://developer.android.com/studio/run/emulator-launch-separate-window?hl=pt-br
-# (Configuração pasta tools) - Conferir as evidências para configuração

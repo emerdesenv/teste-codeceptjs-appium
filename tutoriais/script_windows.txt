@@ -6,14 +6,12 @@
 # Configurações das váriaveis de usuário
 
 1 - ANDROID_HOME = C:\Users\USER_PC\AppData\Local\Android\Sdk
-2 - JAVA_HOME = C:\Program Files\Java\jdk1.8.0_231
+2 - JAVA_HOME = C:\Program Files\Java\jdk-23
 
 # Configurações das váriaveis de ambiente: PATH
 
-# C:\Users\emers\AppData\Local\Android\Sdk\tools
 # C:\Users\emers\AppData\Local\Android\Sdk\platform-tools
 
 # Configuração do Android Studio (Final)
 
 * (Emulador externo) - Seguir as configurações do tutorial: https://developer.android.com/studio/run/emulator-launch-separate-window?hl=pt-br
-# (Configuração pasta tools) - Conferir as evidências para configuração
